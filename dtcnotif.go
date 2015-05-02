@@ -14,12 +14,7 @@ func main() {
         MinSize: Size{600, 400},
         Layout:  VBox{},
         Children: []Widget{
-            HSplitter{
-                Children: []Widget{
-                    TextEdit{AssignTo: &inTE},
-                    TextEdit{AssignTo: &outTE, ReadOnly: true},
-                },
-            },
+            TextEdit{AssignTo: &outTE, ReadOnly: true},
             PushButton{
                 Text: "OK",
                 OnClicked: func() {
